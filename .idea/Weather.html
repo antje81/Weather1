@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- important for mobile devices -->
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="WeatherDisplay.css">
+</head>
+<body onload="Query()">
+
+<header>
+    <h1> What does the weatherman say? </h1>
+    <img src="wetterfrosch.jpg" alt="weatherfrog">
+    <script type="text/javascript" src="WeatherQuery.js"></script>
+</header>
+
+<form method="post" name="cityWeather">
+
+    <iframe src="https://www.wetter.de/widget/3tage/u0tyz1rj/false/"></iframe>
+    <br/>
+    <a href="https://www.wetter.de" rel="nofollow" target="_blank">The weather in ...</a>
+    <br>
+    <br>
+    <label for="City">City:
+        <input name="city" id="city" placeholder="London" maxlength="30" value="London"></input>
+    </label>
+
+    <input type="button" name="button1" id="button1" value="searching"
+           onClick="Query()">
+    <br>
+    <div class="grid-container">
+
+        <div class="weatherQuery" id="weatherQuery" name="wheaterQuery" inputmode="" value="">
+        </div>
+
+        <div class="weatherQuery1" id="weatherQuery1" name="wheaterQuery1" inputmode="" value="">
+        </div>
+
+        <div class="weatherQuery2" id="weatherQuery2" name="wheaterQuery2" inputmode="" value="">
+        </div>
+
+    </div>
+</form>
+
+
+</body>
+</html>
