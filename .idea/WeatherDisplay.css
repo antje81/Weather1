@@ -1,9 +1,8 @@
 
-
 iframe {
     width: 70%;
     border: none;
-    height: 180px;
+    height: auto;
     background-color: #81F7BE;
 }
 
@@ -26,7 +25,6 @@ h1 {
 }
 
 body {
-
     color: #3f2aa3;
     background-color: #81F7BE;
     font-family: "Papyrus", fantasy;
@@ -36,12 +34,10 @@ body {
 
 form {
     text-align: center;
-
 }
 
 header {
     text-align: center;
-
 }
 
 @media screen and (max-width: 600px) {
@@ -59,11 +55,32 @@ header {
     margin-left: 10%;
 
 }
+
 .grid-container > div {
 
-    background-color: #dff5e9;
+    background-color:  #81F7BE;
     text-align: center;
     padding: 20px 0;
     font-size: 1em;
 
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 10%;
+
+
+}
+
+.grid-container1 > img {
+    max-width: 50px;
+    height: 50px;
+    border:  #81F7BE;
+    padding: 10px;
+    border-collapse: separate;
+    image-orientation: from-image;
+    margin-left: 30%;
 }
